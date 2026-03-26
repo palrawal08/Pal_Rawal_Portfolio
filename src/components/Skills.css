@@ -1,0 +1,125 @@
+/* ── Skills Section ──────────────────────────────────────────────── */
+
+.skills-section {
+  padding: 8rem 2rem;
+  background: linear-gradient(180deg, transparent, rgba(0,212,255,0.02), transparent);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+/* Skill Card */
+.skill-card {
+  padding: 2rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.3), 0 0 30px rgba(0,212,255,0.05);
+  border-color: rgba(0,212,255,0.25);
+}
+
+.skill-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  margin-bottom: 1.75rem;
+}
+
+.skill-card-icon {
+  width: 40px; height: 40px;
+  border-radius: 6px;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.skill-card-title {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+/* Bars */
+.skill-bars { display: flex; flex-direction: column; gap: 1rem; }
+
+.skill-bar-item {}
+
+.skill-bar-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.4rem;
+}
+
+.skill-name {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+}
+
+.skill-level {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.skill-bar-track {
+  height: 5px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.skill-bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Tech badges */
+.tech-badges-section {
+  text-align: center;
+}
+
+.badges-label {
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.05em;
+}
+
+.tech-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.tech-badge {
+  padding: 0.4rem 1rem;
+  border-radius: 100px;
+  border: 1px solid rgba(0,212,255,0.2);
+  background: rgba(0,212,255,0.05);
+  color: var(--text-secondary);
+  font-size: 0.83rem;
+  font-family: 'JetBrains Mono', monospace;
+  transition: all 0.2s ease;
+  cursor: default;
+}
+
+.tech-badge:hover {
+  border-color: #00d4ff;
+  color: #00d4ff;
+  background: rgba(0,212,255,0.08);
+  box-shadow: 0 0 10px rgba(0,212,255,0.2);
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .skills-grid { grid-template-columns: 1fr; }
+}

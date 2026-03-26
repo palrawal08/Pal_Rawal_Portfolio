@@ -1,0 +1,193 @@
+/* ── Resume Section ──────────────────────────────────────────────── */
+
+.resume-section {
+  padding: 8rem 2rem;
+  background: linear-gradient(180deg, transparent, rgba(123,47,255,0.02), transparent);
+}
+
+.resume-wrapper {
+  border-radius: 12px;
+  padding: 2.5rem;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+/* Preview */
+.resume-preview {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.resume-mockup {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 6px;
+  padding: 2.5rem;
+  font-family: 'Exo 2', sans-serif;
+  position: relative;
+  overflow: hidden;
+  max-height: 500px;
+}
+
+.mock-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid rgba(0,212,255,0.3);
+}
+
+.mock-name {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #00d4ff, #7b2fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 0.15em;
+}
+
+.mock-sub {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin: 0.3rem 0;
+  letter-spacing: 0.05em;
+}
+
+.mock-contact {
+  color: var(--text-muted);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  margin-top: 0.5rem;
+}
+
+.mock-section {
+  margin-bottom: 1.5rem;
+}
+
+.mock-section-title {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #00d4ff;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.mock-divider {
+  height: 1px;
+  background: rgba(255,255,255,0.1);
+  margin-bottom: 0.875rem;
+}
+
+.mock-entry {
+  margin-bottom: 0.75rem;
+}
+
+.mock-entry-title {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+.mock-entry-sub {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  font-family: 'JetBrains Mono', monospace;
+  margin-top: 0.15rem;
+}
+
+.mock-skills { display: flex; flex-direction: column; gap: 0.35rem; }
+
+.mock-skill-row {
+  font-size: 0.83rem;
+  color: var(--text-secondary);
+}
+
+.mock-skill-row span {
+  color: var(--text-primary);
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+/* Blur overlay */
+.resume-blur-overlay {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 160px;
+  background: linear-gradient(to bottom, transparent, var(--bg-card, rgba(5,5,15,0.95)));
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.blur-label {
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+  letter-spacing: 0.05em;
+}
+
+/* Actions */
+.resume-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Modal */
+.resume-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(8px);
+  z-index: 5000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.resume-modal-content {
+  background: var(--bg-secondary);
+  border: 1px solid rgba(0,212,255,0.2);
+  border-radius: 12px;
+  padding: 2.5rem;
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem; right: 1rem;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 4px;
+  color: var(--text-secondary);
+  padding: 0.4rem;
+  display: flex;
+  cursor: none;
+  transition: all 0.2s;
+}
+
+.modal-close:hover {
+  background: rgba(255,0,0,0.1);
+  border-color: rgba(255,0,0,0.3);
+  color: #ff4444;
+}
+
+.modal-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .resume-wrapper { padding: 1.5rem; }
+  .resume-mockup { padding: 1.5rem; }
+}
